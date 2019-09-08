@@ -1,0 +1,40 @@
+Q1
+
+Weighting ¡û 10
+Total ¡û 0
+Count ¡û 1
+REPEAT
+    INPUT Digit
+    Value ¡û Digit ¡Á Weighting
+    Total ¡û Total + Value
+    Weighting ¡û Weighting - 1
+    Count ¡û Count + 1
+UNTIL Count = 10
+Remainder ¡û Total MOD 11
+CheckDigit ¡û 11 - Remainder
+IF CheckDigit > 9
+    THEN
+        CheckDigit ¡û X
+ENDIF
+
+
+
+
+Q3
+
+RogueValue ¡û -1
+Total ¡û 0 
+Count ¡û 0
+INPUT Number
+WHILE Number <>RogueValue
+    Count ¡û Count + 1
+    Total ¡û Total + Number
+    INPUT Number
+ENDWHILE
+IF Count > 0
+    THEN
+        Average ¡û Total / Count
+ENDIF
+OUTPUT Average
+
+
